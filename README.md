@@ -27,16 +27,16 @@ Once you have ollama downloaded, open terminal and type below commands to pull t
 ## Getting Started
 
 1. Ensure ollama is Running: Execute the commands mentioned above to confirm that ollama is running on your system.
-2. Clone the Repository: Clone the repository to your local machine and launch the spring application using the provided commands.
+2. Clone the Repository: Clone the repository to your local machine and launch the spring application.
 3. Verify API Functionality: Utilize Postman to verify that the mentioned APIs are functioning correctly.
 4. Start mychatbot React Application: Initiate the mychatbot React application by executing the npm start command.
-Send a Message: Once the React application is running, send a message and await the response.
+5. Send a Message: Once the React application is running, send a message and await the response.
 
 By following these steps, you'll be ready to interact with the system seamlessly.
 
 ## API Reference
 
-#### Get all items
+#### invoking ollama chat
 
 ```http
   POST http://localhost:8080/api/v1/chat

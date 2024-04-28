@@ -1,7 +1,7 @@
 
 # SpringAi + ollama
 
-This project demonstrates the implementation of Large language models (LLMs) and SpringBoot using Ollama and Spring AI to run the models locally.
+This project demonstrates the implementation of Large language models (LLMs) using Ollama to run the models locally and SpringBoot for local AI interactions.
 
 
 ## Tech Stack

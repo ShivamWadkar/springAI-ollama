@@ -1,0 +1,95 @@
+/* ChatGPTDashboard.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100vh; /* Set height to 100% of viewport height */
+  border-radius: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+}
+
+.message-container {
+  padding: 20px;
+  padding-bottom: 120px; /* Adjust the value based on the height of the input container */
+  max-height: calc(80vh - 200px); /* Adjust the value based on the height of the input container and any additional space */
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 70%;
+}
+
+.user {
+  background-color: #222; /* Dark gray background for user messages */
+  color: #fff; /* White text for user messages */
+  align-self: flex-end;
+}
+
+.ChatGPT {
+  background-color: #333; /* Darker gray background for ChatGPT messages */
+  color: #fff; /* White text for ChatGPT messages */
+}
+
+.input-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000; /* Adjust background color if necessary */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px 20px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  background-color: #222;
+  color: #fff;
+}
+
+.input-container button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .message {
+    max-width: 80%;
+  }
+}

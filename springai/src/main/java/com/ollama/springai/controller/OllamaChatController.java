@@ -1,10 +1,7 @@
 package com.ollama.springai.controller;
 
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.ollama.springai.records.Payload;
 import com.ollama.springai.service.OllamaChatGenerator;
 
@@ -12,6 +9,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1")
+@CrossOrigin(origins = "http://localhost:3000")
 public class OllamaChatController {
 
     private final OllamaChatGenerator ollamaChatGenerator;
